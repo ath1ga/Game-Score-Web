@@ -7,7 +7,7 @@ const games = [
         platform: "PC, PlayStation e Xbox",
         release: "2020",
         description: "Explore Night City em uma aventura de mundo aberto cheia de escolhas, ação e tecnologia.",
-        image: "../assets/cyberpunk.jpg"
+        image: "assets/cyberpunk.jpg"
     },
     {
         title: "Resident Evil 4",
@@ -17,7 +17,7 @@ const games = [
         platform: "PC, PlayStation e Xbox",
         release: "2023",
         description: "Uma jornada de sobrevivência intensa com combates estratégicos e uma atmosfera assustadora.",
-        image: "../assets/resident-evil-4.jpg.webp"
+        image: "assets/resident-evil-4.jpg.webp"
     },
     {
         title: "Hollow Knight",
@@ -27,7 +27,7 @@ const games = [
         platform: "PC, Nintendo Switch e PlayStation",
         release: "2017",
         description: "Desça às profundezas de um reino misterioso e descubra seus segredos em uma aventura desafiadora.",
-        image: "../assets/hollow-knight.jpg.webp"
+        image: "assets/hollow-knight.jpg.webp"
     },
     {
         title: "Elden Ring",
@@ -37,7 +37,7 @@ const games = [
         platform: "PC, PlayStation e Xbox",
         release: "2022",
         description: "Enfrente criaturas lendárias e descubra um vasto mundo de fantasia com liberdade para explorar.",
-        image: "../assets/elden-ring.jpg.jpg"
+        image: "assets/elden-ring.jpg.jpg"
     }
 ];
 
