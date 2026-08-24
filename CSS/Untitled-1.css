@@ -120,19 +120,48 @@ header h1 {
 .sort-control {
    display: flex;
    align-items: center;
-   gap: 10px;
-   color: var(--muted);
-   font-size: 12px;
-   white-space: nowrap;
+   justify-content: center;
+   gap: 12px;
+   margin-top: 24px;
+   color: var(--text);
+   font-size: 14px;
+}
+
+.sort-control label {
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 1px;
 }
 
 .sort-control select {
-   padding: 9px 30px 9px 12px;
+   padding: 12px 16px;
    color: var(--white);
-   background: var(--surface);
-   border: 1px solid rgba(255, 255, 255, .16);
-   border-radius: 6px;
+   background: linear-gradient(135deg, rgba(53, 208, 186, 0.1), rgba(255, 71, 126, 0.1));
+   border: 2px solid var(--blue);
+   border-radius: 8px;
    font: inherit;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   min-width: 200px;
+}
+
+.sort-control select:hover {
+   border-color: var(--pink);
+   background: linear-gradient(135deg, rgba(53, 208, 186, 0.2), rgba(255, 71, 126, 0.2));
+   box-shadow: 0 0 12px rgba(255, 71, 126, 0.3);
+}
+
+.sort-control select:focus {
+   outline: none;
+   border-color: var(--pink);
+   box-shadow: 0 0 16px rgba(255, 71, 126, 0.4);
+}
+
+.sort-control select option {
+   background: var(--surface);
+   color: var(--white);
+   padding: 8px;
 }
 
 .category-button {

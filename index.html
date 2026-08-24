@@ -20,20 +20,52 @@
 
         <main>
 
-            <section>
-                <h2> Descubra seu próximo jogo favorito
+            <section class="search-section">
+                <h2>Descubra seu próximo jogo favorito</h2>
 
-                    <p>
-                        Encontre, avalie e descubra novos jogos
-                    </p>
-              <input
-              type="text"
-              placeholder="Pesquisar jogos..."
-              >
-
-              <button> Pesquisar </button>
+                <p>Encontre, avalie e descubra novos jogos</p>
+                
+                <div class="search-bar">
+                    <input
+                        type="text"
+                        placeholder="Pesquisar jogos..."
+                    >
+                    <button type="button" data-search-button>Pesquisar</button>
+                </div>
             </section>
+
+            <section class="filters-section">
+                <div id="category-filters" class="category-filters"></div>
+                <div class="sort-control">
+                    <label for="sort-games">Ordenar por:</label>
+                    <select id="sort-games">
+                        <option value="featured">Destaque</option>
+                        <option value="rating">Melhor Avaliado</option>
+                        <option value="title">Título</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="games-section">
+                <div id="games-grid" class="games-grid"></div>
+            </section>
+
         </main>
+
+        <div id="game-modal" class="modal" hidden>
+            <div class="modal-content">
+                <button type="button" class="modal-close" data-modal-close">✕</button>
+                <img data-modal-image src="" alt="">
+                <div class="modal-info">
+                    <h2 data-modal-title></h2>
+                    <p><strong>Gênero:</strong> <span data-modal-genre></span></p>
+                    <p><strong>Avaliação:</strong> <span data-modal-rating></span>/10</p>
+                    <p><strong>Plataforma:</strong> <span data-modal-platform></span></p>
+                    <p><strong>Lançamento:</strong> <span data-modal-release></span></p>
+                    <p data-modal-description></p>
+                </div>
+            </div>
+        </div>
 
             <script defer src="js/Untitled-1.js"></script>
     </body>
